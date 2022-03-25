@@ -765,7 +765,7 @@ body{
 
 .modal-content {
   width :55vw;
-  background: url("/docs/assets/images/nord_bg.jpg");
+  background: url("docs/assets/images/nord_bg.jpg");
 }
 .modal-dialog iframe{
   margin: 0 auto;
