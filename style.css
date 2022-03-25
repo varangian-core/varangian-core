@@ -19,10 +19,8 @@ section{
   display: flex;
   align-items: center;
   /*add personal image*/
-  background: url("docs/assets/images/nord_bg.jpg")no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url("docs/assets/images/nord_bg.jpg") no-repeat fixed center;
 }
 
 .main .content{
@@ -410,29 +408,62 @@ body{
   margin: 15px;
 }
 
-.work .content .card .card-img{
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 15px;
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: max-content;
+  grid-gap: 15px;
+
+
 }
 
-.work .content .card .card-img img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+
+.card-img {
+  padding: 10px;
   border-radius: 10px;
-  transition: 0.5s ease;
+  background: url("docs/assets/images/waves.svg");
+  background-size: auto 100%;
+  background-origin: bottom right;
+  border: 2px solid grey;
 }
 
-.work .content .card .card-img img:hover{
-  transform: scale(1.1);
+
+.card-img img{
+  border-radius: 10px;
+  border: 2px solid grey;
 }
 
+
+
+.card-img img{
+  object-fit: cover;
+  width:100%;
+  overflow: hidden;
+}
+
+
+.card-img img:hover{
+  transform: scale(1.05);
+}
+
+.card-img h3 {
+  color: #FFF;
+  text-align: center;
+  background: rgb(2,0, 36);
+}
+
+.card-img p{
+  color: #FFF;
+  font-family: math;
+  font-size: 1.2em;
+}
+
+.description{
+  font-family: math;
+  font-size: 0.2em;
+}
 .contact .content{
   display: flex;
   justify-content: center;
@@ -615,7 +646,7 @@ body{
 
   .menu-btn{
     position: absolute;
-    background: url(images/menu.png)no-repeat;
+    /*background: url(images/menu.png)no-repeat;*/
     background-size: 30px;
     background-position: center;
     width: 40px;
@@ -628,7 +659,7 @@ body{
 
   .menu-btn.active{
     z-index: 999;
-    background: url(images/close.png)no-repeat;
+    /*background: url(images/close.png)no-repeat;*/
     background-size: 25px;
     background-position: center;
     transition: 0.3s ease;
