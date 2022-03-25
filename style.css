@@ -218,6 +218,7 @@ body{
 .about .content .col-left{
   position: relative;
   width: 45%;
+  height:60vh;
 }
 
 .about .content .col-right{
@@ -748,4 +749,25 @@ body{
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+/*modal form*/
+.modal-form{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.modal-title {
+  color: #fff;
+}
+
+.modal-content {
+  width :55vw;
+  background: url("/docs/assets/images/nord_bg.jpg");
+}
+.modal-dialog iframe{
+  margin: 0 auto;
+  display: block;
 }
