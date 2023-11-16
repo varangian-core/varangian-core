@@ -67,7 +67,7 @@ h2 span {
 
 .animated-text {
   position: relative;
-  height: 60px;
+  height: 70px;
   overflow: hidden;
 }
 
@@ -80,7 +80,7 @@ h2 span {
     margin-top : 0;
   }
   50% {
-    margin-top : -85px;
+    margin-top : -95px;
   }
 }
 
