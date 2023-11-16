@@ -57,6 +57,14 @@ h2 span {
   font-weight: 600;
 }
 
+.animated-text h3{
+  color: #F5BD02;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
 .animated-text {
   position: relative;
   height: 60px;
