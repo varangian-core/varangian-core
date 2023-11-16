@@ -18,25 +18,25 @@ section{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("docs/assets/images/nord_bg.jpg") no-repeat fixed center;
+  background: url("docs/assets/images/nord_bg.jpg") no-repeat center center scroll;
   background-size: cover;
-  /* Fallback color */
-  background-color: #1a6b5e; 
+  background-color: #333; /* Fallback color */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+/* Adjustments for different aspect ratios and devices */
+@media (max-aspect-ratio: 3/4) {
   .main {
-    background-position: top center; /* Adjust as needed for mobile devices */
+    background-size: contain; /* Or adjust as needed */
   }
 }
 
+/* High-resolution adjustments */
 @media (min-resolution: 192dpi) {
   .main {
-    /* High-resolution image for high DPI screens */
-    background-image: url("docs/assets/images/nord_bg_highres.jpg");
+    background-image: url("docs/assets/images/nord_bg.jpg");
   }
 }
+
 
 .main .content{
   max-width: 800px;
@@ -76,13 +76,13 @@ section{
     margin-top: 0;
   }
   25%{
-    margin-top: -35px;
+    margin-top: -15px;
   }
   50%{
-    margin-top: -70px;
+    margin-top: -40px;
   }
   75%{
-    margin-top: -35px;
+    margin-top: -15px;
   }
   100%{
     margin-top: 0;
