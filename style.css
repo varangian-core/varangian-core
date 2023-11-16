@@ -63,35 +63,24 @@ h2 span {
   overflow: hidden;
 }
 
-.animated-text h3{
-  color: #F5BD02;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 1px;
+.animated-text h3:nth-child(1) {
+  animation: text-move 5s ease-in-out infinite; 
 }
 
-.animated-text h3:nth-child(1){
-  animation: text-move 5s infinite;
+.animated-text h3:nth-child(2) {
+  animation: text-move 5s ease-in-out infinite;
+  animation-delay: 1.0;
 }
 
-@keyframes text-move{
-  0%{
+@keyframes text-move {
+  0%, 100% {
     margin-top: 0;
   }
-  25%{
-    margin-top: -15px;
-  }
-  50%{
-    margin-top: -46px;
-  }
-  75%{
-    margin-top: -15px;
-  }
-  100%{
-    margin-top: 0;
+  50% {
+    margin-top: -70px;
   }
 }
+
 
 .btn{
   color: #fff;
