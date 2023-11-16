@@ -12,15 +12,30 @@ section{
   padding: 80px 200px;
 }
 
-.main{
+.main {
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /*add personal image*/
-  background-size: cover;
   background: url("docs/assets/images/nord_bg.jpg") no-repeat fixed center;
+  background-size: cover;
+  /* Fallback color */
+  background-color: #1a6b5e; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .main {
+    background-position: top center; /* Adjust as needed for mobile devices */
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .main {
+    /* High-resolution image for high DPI screens */
+    background-image: url("docs/assets/images/nord_bg_highres.jpg");
+  }
 }
 
 .main .content{
@@ -61,13 +76,13 @@ section{
     margin-top: 0;
   }
   25%{
-    margin-top: -70px;
+    margin-top: -35px;
   }
   50%{
-    margin-top: -140px;
+    margin-top: -70px;
   }
   75%{
-    margin-top: -70px;
+    margin-top: -35px;
   }
   100%{
     margin-top: 0;
